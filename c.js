@@ -18,7 +18,7 @@ if (body) {
       // 将歌手改为固定文本“点击播放—>”
       obj.data.song_singer = "聪聪yyds";
       // 修改封面为指定链接
-      obj.data.cover = "https://raw.githubusercontent.com/ccnn-666/iOS/refs/heads/main/WeChat.jpg";
+      obj.data.cover = "https://git.repcz.link/raw.githubusercontent.com/ccnn-666/iOS/refs/heads/main/WeChat.jpg";
     }
     $done({body: JSON.stringify(obj)});
   } catch (e) {
