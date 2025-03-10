@@ -16,7 +16,7 @@ if (body) {
     
       obj.data.song_name = originalName + "-" + originalSinger;
       // 将歌手改为固定文本“点击播放—>”
-      obj.data.song_singer = "聪聪yyds>>>";
+      obj.data.song_singer = "聪聪yyds";
       // 修改封面为指定链接
       obj.data.cover = "https://github.com/ccnn-666/iOS/blob/main/WeChat.jpg";
     }
