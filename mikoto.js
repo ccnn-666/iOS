@@ -11,13 +11,14 @@ if (body) {
   try {
     let obj = JSON.parse(body);
     if (obj && obj.data) {
-   // 自定义歌手
-      let customSinger = "聪聪定制版"; // 这里修改为你想要的自定义歌手
+      
       let originalName = obj.data.song_name || "";
-      let originalSinger = obj.data.song_singer || "";
-    
-      obj.data.song_name = originalName + "-" + originalSinger;;
-      // 将歌手改为固定文本“点击播放—>”
+      
+      // 自定义歌手
+      let customSinger = "聪聪定制版"; // 这里修改为你想要的自定义歌手
+      
+      obj.data.song_name = originalName + " - " + customSinger;
+      // 将歌手改为固定文本
       obj.data.song_singer = "聪聪那年";
       // 修改封面为指定链接
       obj.data.cover = "https://q1.qlogo.cn/g?b=qq&nk=1781922652&s=640";
