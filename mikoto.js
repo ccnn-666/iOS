@@ -11,7 +11,7 @@ if (body) {
       
       obj.data.song_name = customSinger + " - " + originalName + "（Cover）";
       // 将歌手改为固定文本
-      obj.data.song_singer = "来自《聪聪那年》自定义专辑";
+      obj.data.song_singer = "《聪聪那年》独家专辑";
       // 修改封面为指定链接
       obj.data.cover = "https://q1.qlogo.cn/g?b=qq&nk=1781922652&s=640";
     }
