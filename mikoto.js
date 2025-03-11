@@ -15,7 +15,7 @@ if (body) {
       let originalName = obj.data.song_name || "";
       let originalSinger = obj.data.song_singer || "";
     
-      obj.data.song_name = originalName + "-" + "聪聪(定制版)";
+      obj.data.song_name = originalName + " - " + "聪聪(定制版)";
       // 将歌手改为固定文本“点击播放—>”
       obj.data.song_singer = "聪聪那年";
       // 修改封面为指定链接
