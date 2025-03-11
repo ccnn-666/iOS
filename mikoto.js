@@ -10,7 +10,7 @@ if (body) {
       let customSinger = "（Cover 聪聪）"; // 这里修改为你想要的自定义歌手
       
       //obj.data.song_name = originalName + " - " + customSinger;
-      obj.data.song_name = originalName + customSinger;
+      obj.data.song_name = originalName customSinger;
       // 将歌手改为固定文本
       obj.data.song_singer = "聪聪那年";
       // 修改封面为指定链接
