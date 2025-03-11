@@ -1,11 +1,3 @@
-//mikoto - 修改点歌卡片的封面
-//使用方法：圈x 添加主机名  api.dragonlongzhu.cn
-//修改本配置的文件名为xxx.js
-//修改本配置显示文本和封面链接
-//然后点歌
-
-
-
 let body = $response.body;
 if (body) {
   try {
