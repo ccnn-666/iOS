@@ -11,9 +11,10 @@ if (body) {
   try {
     let obj = JSON.parse(body);
     if (obj && obj.data) {
-   
+   // 自定义歌手
+      let customSinger = "聪聪定制版"; // 这里修改为你想要的自定义歌手
       let originalName = obj.data.song_name || "";
-      let originalSinger = obj.data.song_singer || "聪聪(定制版)";
+      let originalSinger = obj.data.song_singer || "";
     
       obj.data.song_name = originalName + "-" + originalSinger;;
       // 将歌手改为固定文本“点击播放—>”
