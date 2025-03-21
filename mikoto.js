@@ -9,9 +9,9 @@ if (body) {
       // 自定义歌手
       let customSinger = "聪聪"; // 这里修改为你想要的自定义歌手
       
-      obj.data.song_name = customSinger + " - " + originalName + "（Cover）";
+      obj.data.song_name = originalName + " - " + customSinger;
       // 将歌手改为固定文本
-      obj.data.song_singer = "聪聪那年定制";
+      obj.data.song_singer = "Vae 聪聪";
       // 修改封面为指定链接
       obj.data.cover = "https://q1.qlogo.cn/g?b=qq&nk=1781922652&s=640";
     }
@@ -23,3 +23,4 @@ if (body) {
 } else {
   $done({});
 } 
+
