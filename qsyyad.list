@@ -22,4 +22,3 @@ DOMAIN,pitaya.bytedance.com,REJECT
 DOMAIN,p-luna.bytedance.net,REJECT
 DOMAIN,app-alpha.bytedance.net,REJECT
 DOMAIN,ad.zijieapi.com,DIRECT
-DOMAIN,log3-hl.qishui.com,REJECT
