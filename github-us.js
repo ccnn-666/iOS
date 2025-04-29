@@ -1,5 +1,3 @@
-[Rewrite]
-^https:\/\/(raw|gist)\.githubusercontent\.com\/ header-replace Accept-Language en-us
-^https:\/\/github\.com\/ header-replace Accept-Language en-us
-[Mitm]
+^https:\/\/(raw|gist)\.githubusercontent\.com\/ url request-header (\r\n)Accept-Language:.+(\r\n) request-header $1Accept-Language: en-us$2
+^https:\/\/github\.com\/ url request-header (\r\n)Accept-Language:.+(\r\n) request-header $1Accept-Language: en-us$2
 hostname = raw.githubusercontent.com,gist.githubusercontent.com,github.com
