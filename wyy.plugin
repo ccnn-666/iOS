@@ -1,4 +1,21 @@
-[Rewrite]
-^https:\/\/interface3\.music\.163\.com\/eapi\/(playermode|search\/complex\/(page|rec\/song\/get)|song\/(chorus|enhance\/|type\/detail\/get)|v1\/artist\/top\/song|v3\/discovery\/recommend\/songs|vipnewcenter\/app\/resource\/newaccountpage|homepage\/|v6\/playlist\/|playlist\/|vipauth\/app\/auth\/(soundquality\/)?query) script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js
-[Mitm]
+#!name=wyy
+#!desc=wyy
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1028.png
+
+[Script]
+http-request ^https:\/\/interface3\.music\.163\.com\/eapi\/playermode\/ script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=60, tag=wyy
+
+http-request ^https:\/\/interface3\.music\.163\.com\/eapi\/search\/complex\/(page|rec\/song\/get) script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=60, tag=wyy
+
+http-request ^https:\/\/interface3\.music\.163\.com\/eapi\/song\/(chorus|enhance\/|type\/detail\/get) script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=60, tag=wyy
+
+http-request ^https:\/\/interface3\.music\.163\.com\/eapi\/(v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=60, tag=wyy
+
+http-request ^https:\/\/interface3\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=60, tag=wyy
+
+http-request ^https?:\/\/interface3\.music\.163\.com\/eapi\/(homepage\/|v6\/)?playlist\/ script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=60, tag=wyy
+
+http-request ^https?:\/\/interface3\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=60, tag=wyy
+
+[MITM]
 hostname = *.music.163.com
