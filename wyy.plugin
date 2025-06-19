@@ -1,4 +1,4 @@
 [Rewrite]
-http-request ^https:\/\/interface3\.music\.163\.com\/eapi\/(playermode|search\/complex\/(page|rec\/song\/get)|song\/(chorus|enhance\/|type\/detail\/get)|v1\/artist\/top\/song|v3\/discovery\/recommend\/songs|vipnewcenter\/app\/resource\/newaccountpage|homepage\/|v6\/playlist\/|playlist\/|vipauth\/app\/auth\/(soundquality\/)?query) script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=10, tag=wyy.js
+^https:\/\/interface3\.music\.163\.com\/eapi\/(playermode|search\/complex\/(page|rec\/song\/get)|song\/(chorus|enhance\/|type\/detail\/get)|v1\/artist\/top\/song|v3\/discovery\/recommend\/songs|vipnewcenter\/app\/resource\/newaccountpage|homepage\/|v6\/playlist\/|playlist\/|vipauth\/app\/auth\/(soundquality\/)?query) script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, timeout=10, tag=wyy.js
 [Mitm]
 hostname = *.music.163.com
